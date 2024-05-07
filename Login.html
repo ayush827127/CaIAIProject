@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+  <header>
+    <div id="header" class="z-10 w-full">
+
+      <div id="banner" class=" flex bg-white w-full justify-between px-4">
+        <div class="flex">
+          <a href="index.html">
+            <img class="h-[80px]" src="Cal_ai_orign-removebg-preview.png" alt="">
+          </a>
+          <p class="relative top-[-8px] left-[-20px] text-[55px] font-light"><a href="index.html">&vert;</a>
+          </p>
+          <h1 class="relative top-5 text-[#074D8D] text-[25px] font-bold md:text-[18px] "><a
+              href="index.html">California Artificial Intelligence Institute</a></h1>
+
+        </div>
+        <div>
+          <p class="mt-7 relative text-[1rem] text-[#074D8D] font-bold ">Email: Info@calai.org</p>
+        </div>
+      </div>
+
+      <div class="w-full h-[2px] bg-black"></div>
+    </div>
+  </header>
+
+  <!-- Login Form  -->
+  <div class="bg-gray-100 min-h-screen flex justify-center items-center">
+    <div class="max-w-md w-full bg-white shadow-md rounded-lg p-8">
+      <h1 class="text-2xl font-semibold mb-4">Login</h1>
+      <form id="loginForm">
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+          <input type="email" id="email" name="email"
+            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Enter your email">
+        </div>
+        <div class="mb-6">
+          <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+          <input type="password" id="password" name="password"
+            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Enter your password">
+        </div>
+        <div class="flex items-center justify-between mb-4">
+          <button type="submit"
+            class="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+          <a href="#" class="text-blue-500 hover:text-blue-700 text-sm">Forgot password?</a>
+        </div>
+        <hr class="border-gray-300 mb-4">
+        <div class="mb-4">
+          <p class="text-gray-700">Don't have an account? <a href="SignUp.html"
+              class="text-blue-500 hover:text-blue-700">Signup Now</a></p>
+        </div>
+        <div class="flex items-center justify-center">
+          <hr class="border-gray-300 w-full">
+          <p class="text-gray-500 mx-4">or</p>
+          <hr class="border-gray-300 w-full">
+        </div>
+ 
+        <button type="button" id="google-sign-in"
+          class="bg-blue-600 text-white hover:bg-gray-100 hover:text-black font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-4 w-full focus:outline-none focus:shadow-outline">
+          <img
+            src="data:image/png;base64,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"
+            alt="Google Logo" class="h-6 w-6 inline-block mr-2 rounded-lg" >
+          Sign in with Google
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAoebNDGNMijYHlUWslnsmjYOnGUasKm2U",
+      authDomain: "calai-5df45.firebaseapp.com",
+      projectId: "calai-5df45",
+      storageBucket: "calai-5df45.appspot.com",
+      messagingSenderId: "981887347929",
+      appId: "1:981887347929:web:7184650cfb1092c362e2c8"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+
+    document.getElementById('loginForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Get email and password values
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Sign in with email and password
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          alert("Login Successfull!");
+          localStorage.setItem('email', email);
+          localStorage.setItem('password', password);
+          localStorage.setItem('isLoggedIn', true);
+          // Redirect to a new page
+          window.location.href = 'index.html';
+          // You can handle the signed-in user here
+          console.log(user);
+        })
+        .catch((error) => {
+          // Handle Errors here.
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          alert("Please enter correct email or password");
+        });
+    });
+
+    // Google sign-in
+    function signInWithGoogle() {
+      const provider = new GoogleAuthProvider();
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          // Signed in with Google
+          const user = result.user;
+          alert("Signin Successfull!");
+          localStorage.setItem('email', user.email);
+          localStorage.setItem('password', user.password);
+          localStorage.setItem('isLoggedIn', true);
+          // Redirect to a new page
+          window.location.href = 'index.html';
+          // You can handle the signed-in user here
+          console.log(user);
+        })
+        .catch((error) => {
+          // Handle Errors here.
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          alert(errorMessage);
+        });
+    }
+    document.getElementById('google-sign-in').addEventListener('click', signInWithGoogle);
+
+
+  </script>
+
+
+</body>
+
+
+
+</html>

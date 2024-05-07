@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalAI-StartTest</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AUf6Jh8viomIa90m8KMFndz2iIwKkIcpzZHTUmKY1f8M9J7uDeQ1zO7d-lTb85AU4oiBHBlb2mBZ9g9_"></script>
+</head>
+
+<style>
+    .custom_input {
+        width: 50%;
+        margin-left: 40px;
+        padding: 10px;
+        background-color: rgb(203 213 225);
+        border-radius: 12px;
+    }
+</style>
+
+
+<body>
+    <header>
+        <div id="header" class="z-10 w-full">
+
+            <div id="banner" class=" flex bg-white w-full justify-between px-4" style="background-color: white">
+                <div class="flex">
+                    <a href="index.html">
+                        <img class="h-[80px]" src="Cal_ai_orign-removebg-preview.png" alt="">
+                    </a>
+                    <p class="relative top-[-8px] left-[-20px] text-[55px] font-light"><a href="index.html">&vert;</a>
+                    </p>
+                    <h1 class="relative top-5 text-[#074D8D] text-[25px] font-bold md:text-[18px] "><a
+                            href="index.html">California Artificial Intelligence Institute</a></h1>
+                </div>
+
+                <div>
+                    <p class="mt-7 md:hidden  relative text-[1rem] text-[#074D8D] font-bold md:hidden">Email:
+                        Info@calai.org</p>
+                </div>
+
+            </div>
+            <hr class="" style="width: 100%; height: 2px; background-color: black;">
+            <div class="w-full h-[2px] bg-black"></div>
+        </div>
+
+    </header>
+
+    <div style="background-color: rgb(203 213 225); margin-top: -10px;">
+        <h1 class="text-3xl font-bold text-center mt-2 " style="color: rgb(7 77 141 ); padding: 10px;  ">Registration
+            Form</h1>
+        <div style="text-align: -webkit-center; padding-bottom: 20px; max-width: 60%; margin: auto;">
+            <h1 class=" text-center mt-3" style="font-size: 16px;">Thankyou for Choosing CalAI! We want to customize
+                your experince by
+                delivering you the right content and by supporting you at every stage of your AI career. To do that,
+                please Complete your registration.</h1>
+        </div>
+
+
+        <main class=" px-5 py-4 mb-5" style="text-align: -webkit-center; max-width: 80%; margin: auto;">
+
+
+
+            <form class=" flex flex-col px-12  z-10  md:w-full md:h-[100vh] md:py-5"
+                style=" text-align: -webkit-left; border-radius: 22px;  background-color: white; padding-left: 10%;">
+
+                <div id="submisson" class="hidden">
+                    <p class="px-1 text-green-600  mb-4">Congratulations ! Your Form has been Submitted</p>
+                </div>
+                <br>
+                <!-- <div class="flex flex-col px-4  z-10  md:w-full md:h-[100vh] md:py-5 " style="max-width: 900px;"> -->
+
+                <h2 class="text-2xl text-start py-3 mb-5 " style="color: rgb(7 77 141 ); margin-bottom: 10px;">
+                    Certification information</h2>
+                <div>
+                    <label for="certification">Selected Certification*</label>
+                    <select id="course" class="border-solid border-2 border-gray-400  w-3/5 custom_input" name="course">
+                        <option value="CAID">Certified Artificial Intelligence Developer (CAID )</option>
+                        <option value="CAIM">Certified Artificial Intelligence Manager (CAIM )</option>
+                        <option value="CAIL">Certified Artificial Intelligence Leader (CAIL )</option>
+                    </select>
+                </div>
+
+                <br>
+                <div style="margin-top: -20px;">
+                    <label for="coursePrice"></label>Certification Price*</label>
+                    <input id="coursePrice" class=" py-2 font-bold custom_input" type="text" value="$499"
+                        style="margin-left: 65px;" readonly required>
+                </div>
+                <br>
+                <hr>
+                <h2 class="text-2xl text-start py-3" style="color: rgb(7 77 141 ); margin-bottom: 10px;">Personal
+                    information</h2>
+                <div>
+
+                    <label for="Name" style="margin-right: 90px;">Name*</label>
+                    <input id="name" class="border-solid border-2 border-gray-400 py-2 custom_input" type="text"
+                        placeholder=" Enter your Name" required style="width: 50%; margin-left: 40px;">
+                </div>
+                <br>
+                <div class="flex">
+                    <label for="gender" style="margin-right: 75px;">Gender*</label>
+                    <div class="flex custom_input" style="justify-content: space-around; margin-left: 50px;">
+                        <div>
+                            <input type="radio" id="gender" name="gender" value="male">
+                            <label for="male">Male</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="gender" name="gender" value="female">
+                            <label for="female">Female</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="gender" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+                <div>
+                    <label for="Email" style="margin-right: 90px;">Email*</label>
+                    <input id="email" class="border-solid border-2 border-gray-400 py-2 custom_input" type="text"
+                        placeholder=" Enter your E-mail" required>
+                </div>
+
+                <br>
+                <div>
+                    <label for="country" style="margin-right: 10px; ">Selected Country*</label>
+                    <select id="country" style="width: 50%;"
+                        class="border-solid border-2 border-gray-400 py-2 custom_input" name="country"
+                        style="width: 60%;">
+                        <option value="Afghanistan" data-country-code="+93">Afghanistan</option>
+                        <option value="Albania" data-country-code="+355">Albania</option>
+                        <option value="Algeria" data-country-code="+213">Algeria</option>
+                        <option value="American Samoa" data-country-code="+1-684">American Samoa</option>
+                        <option value="Andorra" data-country-code="+376">Andorra</option>
+                        <option value="Angola" data-country-code="+244">Angola</option>
+                        <option value="Anguilla" data-country-code="+1-264">Anguilla</option>
+                        <option value="Antarctica" data-country-code="">Antarctica</option>
+                        <option value="Antigua and Barbuda" data-country-code="+1-268">Antigua and Barbuda</option>
+                        <option value="Argentina" data-country-code="+54">Argentina</option>
+                        <option value="Armenia" data-country-code="+374">Armenia</option>
+                        <option value="Aruba" data-country-code="+297">Aruba</option>
+                        <option value="Australia" data-country-code="+61">Australia</option>
+                        <option value="Austria" data-country-code="+43">Austria</option>
+                        <option value="Azerbaijan" data-country-code="+994">Azerbaijan</option>
+                        <option value="Bahamas" data-country-code="+1-242">Bahamas</option>
+                        <option value="Bahrain" data-country-code="+973">Bahrain</option>
+                        <option value="Bangladesh" data-country-code="+880">Bangladesh</option>
+                        <option value="Barbados" data-country-code="+1-246">Barbados</option>
+                        <option value="Belarus" data-country-code="+375">Belarus</option>
+                        <option value="Belgium" data-country-code="+32">Belgium</option>
+                        <option value="Belize" data-country-code="+501">Belize</option>
+                        <option value="Benin" data-country-code="+229">Benin</option>
+                        <option value="Bermuda" data-country-code="+1-441">Bermuda</option>
+                        <option value="Bhutan" data-country-code="+975">Bhutan</option>
+                        <option value="Bolivia" data-country-code="+591">Bolivia</option>
+                        <option value="Bosnia and Herzegovina" data-country-code="+387">Bosnia and Herzegovina</option>
+                        <option value="Botswana" data-country-code="+267">Botswana</option>
+                        <option value="Bouvet Island" data-country-code="">Bouvet Island</option>
+                        <option value="Brazil" data-country-code="+55">Brazil</option>
+                        <option value="British Indian Ocean Territory" data-country-code="">British Indian Ocean
+                            Territory
+                        </option>
+                        <option value="Brunei Darussalam" data-country-code="+673">Brunei Darussalam</option>
+                        <option value="Bulgaria" data-country-code="+359">Bulgaria</option>
+                        <option value="Burkina Faso" data-country-code="+226">Burkina Faso</option>
+                        <option value="Burundi" data-country-code="+257">Burundi</option>
+                        <option value="Cambodia" data-country-code="+855">Cambodia</option>
+                        <option value="Cameroon" data-country-code="+237">Cameroon</option>
+                        <option value="Canada" data-country-code="+1">Canada</option>
+                        <option value="Cape Verde" data-country-code="+238">Cape Verde</option>
+                        <option value="Cayman Islands" data-country-code="+1-345">Cayman Islands</option>
+                        <option value="Central African Republic" data-country-code="+236">Central African Republic
+                        </option>
+                        <option value="Chad" data-country-code="+235">Chad</option>
+                        <option value="Chile" data-country-code="+56">Chile</option>
+                        <option value="China" data-country-code="+86">China</option>
+                        <option value="Christmas Island" data-country-code="">Christmas Island</option>
+                        <option value="Cocos (Keeling) Islands" data-country-code="">Cocos (Keeling) Islands</option>
+                        <option value="Colombia" data-country-code="+57">Colombia</option>
+                        <option value="Comoros" data-country-code="+269">Comoros</option>
+                        <option value="Congo" data-country-code="+242">Congo</option>
+                        <option value="Congo, the Democratic Republic of the" data-country-code="+243">Congo, the
+                            Democratic
+                            Republic of the</option>
+                        <option value="Cook Islands" data-country-code="+682">Cook Islands</option>
+                        <option value="Costa Rica" data-country-code="+506">Costa Rica</option>
+                        <option value="Cote d'Ivoire" data-country-code="+225">Cote d'Ivoire</option>
+                        <option value="Croatia (Hrvatska)" data-country-code="+385">Croatia (Hrvatska)</option>
+                        <option value="Cuba" data-country-code="+53">Cuba</option>
+                        <option value="Cyprus" data-country-code="+357">Cyprus</option>
+                        <option value="Czech Republic" data-country-code="+420">Czech Republic</option>
+                        <option value="Denmark" data-country-code="+45">Denmark</option>
+                        <option value="Djibouti" data-country-code="+253">Djibouti</option>
+                        <option value="Dominica" data-country-code="+1-767">Dominica</option>
+                        <option value="Dominican Republic" data-country-code="+1-809">Dominican Republic</option>
+                        <option value="East Timor" data-country-code="+670">East Timor</option>
+                        <option value="Ecuador" data-country-code="+593">Ecuador</option>
+                        <option value="Egypt" data-country-code="+20">Egypt</option>
+                        <option value="El Salvador" data-country-code="+503">El Salvador</option>
+                        <option value="Equatorial Guinea" data-country-code="+240">Equatorial Guinea</option>
+                        <option value="Eritrea" data-country-code="+291">Eritrea</option>
+                        <option value="Estonia" data-country-code="+372">Estonia</option>
+                        <option value="Ethiopia" data-country-code="+251">Ethiopia</option>
+                        <option value="Falkland Islands (Malvinas)" data-country-code="+500">Falkland Islands (Malvinas)
+                        </option>
+                        <option value="Faroe Islands" data-country-code="+298">Faroe Islands</option>
+                        <option value="Fiji" data-country-code="+679">Fiji</option>
+                        <option value="Finland" data-country-code="+358">Finland</option>
+                        <option value="France" data-country-code="+33">France</option>
+                        <option value="France, Metropolitan" data-country-code="">France, Metropolitan</option>
+                        <option value="French Guiana" data-country-code="+594">French Guiana</option>
+                        <option value="French Polynesia" data-country-code="+689">French Polynesia</option>
+                        <option value="French Southern Territories" data-country-code="">French Southern Territories
+                        </option>
+                        <option value="Gabon" data-country-code="+241">Gabon</option>
+                        <option value="Gambia" data-country -code="+220">Gambia</option>
+                        <option value="Georgia" data-country-code="+995">Georgia</option>
+                        <option value="Germany" data-country-code="+49">Germany</option>
+                        <option value="Ghana" data-country-code="+233">Ghana</option>
+                        <option value="Gibraltar" data-country-code="+350">Gibraltar</option>
+                        <option value="Greece" data-country-code="+30">Greece</option>
+                        <option value="Greenland" data-country-code="+299">Greenland</option>
+                        <option value="Grenada" data-country-code="+1-473">Grenada</option>
+                        <option value="Guadeloupe" data-country-code="+590">Guadeloupe</option>
+                        <option value="Guam" data-country-code="+1-671">Guam</option>
+                        <option value="Guatemala" data-country-code="+502">Guatemala</option>
+                        <option value="Guinea" data-country-code="+224">Guinea</option>
+                        <option value="Guinea-Bissau" data-country-code="+245">Guinea-Bissau</option>
+                        <option value="Guyana" data-country-code="+592">Guyana</option>
+                        <option value="Haiti" data-country-code="+509">Haiti</option>
+                        <option value="Heard and Mc Donald Islands" data-country-code="">Heard and Mc Donald Islands
+                        </option>
+                        <option value="Holy See (Vatican City State)" data-country-code="+379">Holy See (Vatican City
+                            State)
+                        </option>
+                        <option value="Honduras" data-country-code="+504">Honduras</option>
+                        <option value="Hong Kong" data-country-code="+852">Hong Kong</option>
+                        <option value="Hungary" data-country-code="+36">Hungary</option>
+                        <option value="Iceland" data-country-code="+354">Iceland</option>
+                        <option value="India" data-country-code="+91">India</option>
+                        <option value="Indonesia" data-country-code="+62">Indonesia</option>
+                        <option value="Iran (Islamic Republic of)" data-country-code="+98">Iran (Islamic Republic of)
+                        </option>
+                        <option value="Iraq" data-country-code="+964">Iraq</option>
+                        <option value="Ireland" data-country-code="+353">Ireland</option>
+                        <option value="Israel" data-country-code="+972">Israel</option>
+                        <option value="Italy" data-country-code="+39">Italy</option>
+                        <option value="Jamaica" data-country-code="+1-876">Jamaica</option>
+                        <option value="Japan" data-country-code="+81">Japan</option>
+                        <option value="Jordan" data-country-code="+962">Jordan</option>
+                        <option value="Kazakhstan" data-country-code="+7">Kazakhstan</option>
+                        <option value="Kenya" data-country-code="+254">Kenya</option>
+                        <option value="Kiribati" data-country-code="+686">Kiribati</option>
+                        <option value="Korea, Democratic People's Republic of" data-country-code="+850">Korea,
+                            Democratic
+                            People's Republic of</option>
+                        <option value="Korea, Republic of" data-country-code="+82">Korea, Republic of</option>
+                        <option value="Kuwait" data-country-code="+965">Kuwait</option>
+                        <option value="Kyrgyzstan" data-country-code="+996">Kyrgyzstan</option>
+                        <option value="Lao People's Democratic Republic" data-country-code="+856">Lao People's
+                            Democratic
+                            Republic</option>
+                        <option value="Latvia" data-country-code="+371">Latvia</option>
+                        <option value="Lebanon" data-country-code="+961">Lebanon</option>
+                        <option value="Lesotho" data-country-code="+266">Lesotho</option>
+                        <option value="Liberia" data-country-code="+231">Liberia</option>
+                        <option value="Libyan Arab Jamahiriya" data-country-code="+218">Libyan Arab Jamahiriya</option>
+                        <option value="Liechtenstein" data-country-code="+423">Liechtenstein</option>
+                        <option value="Lithuania" data-country-code="+370">Lithuania</option>
+                        <option value="Luxembourg" data-country-code="+352">Luxembourg</option>
+                        <option value="Macau" data-country-code="+853">Macau</option>
+                        <option value="Macedonia, The Former Yugoslav Republic of" data-country-code="+389">Macedonia,
+                            The
+                            Former Yugoslav Republic of</option>
+                        <option value="Madagascar" data-country-code="+261">Madagascar</option>
+                        <option value="Malawi" data-country-code="+265">Malawi</option>
+                        <option value="Malaysia" data-country-code="+60">Malaysia</option>
+                        <option value="Maldives" data-country-code="+960">Maldives</option>
+                        <option value="Mali" data-country-code="+223">Mali</option>
+                        <option value="Malta" data-country-code="+356">Malta</option>
+                        <option value="Marshall Islands" data-country-code="+692">Marshall Islands</option>
+                        <option value="Martinique" data-country-code="+596">Martinique</option>
+                        <option value="Mauritania" data-country-code="+222">Mauritania</option>
+                        <option value="Mauritius" data-country-code="+230">Mauritius</option>
+                        <option value="Mayotte" data-country-code="+262">Mayotte</option>
+                        <option value="Mexico" data-country-code="+52">Mexico</option>
+                        <option value="Micronesia, Federated States of" data-country-code="+691">Micronesia, Federated
+                            States of
+                        </option>
+                        <option value="Moldova, Republic of" data-country-code="+373">Moldova, Republic of</option>
+                        <option value="Monaco" data-country-code="+377">Monaco</option>
+                        <option value="Mongolia" data-country-code="+976">Mongolia</option>
+                        <option value="Montserrat" data-country-code="+1-664">Montserrat</option>
+                        <option value="Morocco" data-country-code="+212">Morocco</option>
+                        <option value="Mozambique" data-country-code="+258">Mozambique</option>
+                        <option value="Myanmar" data-country-code="+95">Myanmar</option>
+                        <option value="Namibia" data-country-code="+264">Namibia</option>
+                        <option value="Nauru" data-country-code="+674">Nauru</option>
+                        <option value="Nepal" data-country-code="+977">Nepal</option>
+                        <option value="Netherlands" data-country-code="+31">Netherlands</option>
+                        <option value="Netherlands Antilles" data-country-code="+599">Netherlands Antilles</option>
+                        <option value="New Caledonia" data-country-code="+687">New Caledonia</option>
+                        <option value="New Zealand" data-country-code="+64">New Zealand</option>
+                        <option value="Nicaragua" data-country-code="+505">Nicaragua</option>
+                        <option value="Niger" data-country-code="+227">Niger</option>
+                        <option value="Nigeria" data-country-code="+234">Nigeria</option>
+                        <option value="Niue" data-country-code="+683">Niue</option>
+                        <option value="Norfolk Island" data-country-code="">Norfolk Island</option>
+                        <option value="Northern Mariana Islands" data-country-code="+1-670">Northern Mariana Islands</
+                                option>
+                        <option value="Norway" data-country-code="+47">Norway</option>
+                        <option value="Oman" data-country-code="+968">Oman</option>
+                        <option value="Pakistan" data-country-code="+92">Pakistan</option>
+                        <option value="Palau" data-country-code="+680">Palau</option>
+                        <option value="Panama" data-country-code="+507">Panama</option>
+                        <option value="Papua New Guinea" data-country-code="+675">Papua New Guinea</option>
+                        <option value="Paraguay" data-country-code="+595">Paraguay</option>
+                        <option value="Peru" data-country-code="+51">Peru</option>
+                        <option value="Philippines" data-country-code="+63">Philippines</option>
+                        <option value="Pitcairn" data-country-code="">Pitcairn</option>
+                        <option value="Poland" data-country-code="+48">Poland</option>
+                        <option value="Portugal" data-country-code="+351">Portugal</option>
+                        <option value="Puerto Rico" data-country-code="+1-787">Puerto Rico</option>
+                        <option value="Qatar" data-country-code="+974">Qatar</option>
+                        <option value="Reunion" data-country-code="+262">Reunion</option>
+                        <option value="Romania" data-country-code="+40">Romania</option>
+                        <option value="Russian Federation" data-country-code="+7">Russian Federation</option>
+                        <option value="Rwanda" data-country-code="+250">Rwanda</option>
+                        <option value="Saint Kitts and Nevis" data-country-code="+1-869">Saint Kitts and Nevis</option>
+                        <option value="Saint LUCIA" data-country-code="+1-758">Saint LUCIA</option>
+                        <option value="Saint Vincent and the Grenadines" data-country-code="+1-784">Saint Vincent and
+                            the
+                            Grenadines</option>
+                        <option value="Samoa" data-country-code="+685">Samoa</option>
+                        <option value="San Marino" data-country-code="+378">San Marino</option>
+                        <option value="Sao Tome and Principe" data-country-code="+239">Sao Tome and Principe</option>
+                        <option value="Saudi Arabia" data-country-code="+966">Saudi Arabia</option>
+                        <option value="Senegal" data-country-code="+221">Senegal</option>
+                        <option value="Seychelles" data-country-code="+248">Seychelles</option>
+                        <option value="Sierra Leone" data-country-code="+232">Sierra Leone</option>
+                        <option value="Singapore" data-country-code="+65">Singapore</option>
+                        <option value="Slovakia (Slovak Republic)" data-country-code="+421">Slovakia (Slovak Republic)
+                        </option>
+                        <option value="Slovenia" data-country-code="+386">Slovenia</option>
+                        <option value="Solomon Islands" data-country-code="+677">Solomon Islands</option>
+                        <option value="Somalia" data-country-code="+252">Somalia</option>
+                        <option value="South Africa" data-country-code="+27">South Africa</option>
+                        <option value="South Georgia and the South Sandwich Islands" data-country-code="">South Georgia
+                            and
+                            the
+                            South Sandwich Islands</option>
+                        <option value="Spain" data-country-code="+34">Spain</option>
+                        <option value="Sri Lanka" data-country-code="+94">Sri Lanka</option>
+                        <option value="St. Helena" data-country-code="+290">St. Helena</option>
+                        <option value="St. Pierre and Miquelon" data-country-code="+508">St. Pierre and Miquelon
+                        </option>
+                        <option value="Sudan" data-country-code="+249">Sudan</option>
+                        <option value="Suriname" data-country-code="+597">Suriname</option>
+                        <option value="Svalbard and Jan Mayen Islands" data-country-code="">Svalbard and Jan Mayen
+                            Islands
+                        </option>
+                        <option value="Swaziland" data-country-code="+268">Swaziland</option>
+                        <option value="Sweden" data-country-code="+46">Sweden</option>
+                        <option value="Switzerland" data-country-code="+41">Switzerland</option>
+                        <option value="Syrian Arab Republic" data-country-code="+963">Syrian Arab Republic</option>
+                        <option value="Taiwan, Province of China" data-country-code="+886">Taiwan, Province of China
+                        </option>
+                        <option value="Tajikistan" data-country-code="+992">Tajikistan</option>
+                        <option value="Tanzania, United Republic of" data-country-code="+255">Tanzania, United Republic
+                            of
+                        </option>
+                        <option value="Thailand" data-country-code="+66">Thailand</option>
+                        <option value="Togo" data-country-code="+228">Togo</option>
+                        <option value="Tokelau" data-country-code="+690">Tokelau</option>
+                        <option value="Tonga" data-country-code="+676">Tonga</option>
+                        <option value="Trinidad and Tobago" data-country-code="+1-868">Trinidad and Tobago</option>
+                        <option value="Tunisia" data-country-code="+216">Tunisia</option>
+                        <option value="Turkey" data-country-code="+90">Turkey</option>
+                        <option value="Turkmenistan" data-country-code="+993">Turkmenistan</option>
+                        <option value="Turks and Caicos Islands" data-country-code="+1-649">Turks and Caicos Islands
+                        </option>
+                        <option value="Tuvalu" data-country-code="+688">Tuvalu</option>
+                        <option value="Uganda" data-country-code="+256">Uganda</option>
+                        <option value="Ukraine" data-country-code="+380">Ukraine</option>
+                        <option value="United Arab Emirates" data-country-code="+971">United Arab Emirates</option>
+                        <option value="United Kingdom" data-country-code="+44">United Kingdom</option>
+                        <option value="United States" selected data-country-code="+1">United States</option>
+                        <option value="United States Minor Outlying Islands" data-country-code="">United States Minor
+                            Outlying
+                            Islands</option>
+                        <option value="Uruguay" data-country-code="+598">Uruguay</option>
+                        <option value="Uzbekistan" data-country-code="+998">Uzbekistan</option>
+                        <option value="Vanuatu" data-country-code="+678">Vanuatu</option>
+                        <option value="Venezuela" data-country-code="+58">Venezuela</option>
+                        <option value="Viet Nam" data-country-code="+84">Viet Nam</option>
+                        <option value="Virgin Islands (British)" data-country-code="+1-284">Virgin Islands (British)
+                        </option>
+                        <option value="Virgin Islands (U.S.)" data-country-code="+1-340">Virgin Islands (U.S.)</option>
+                        <option value="Wallis and Futuna Islands" data-country-code="">Wallis and Futuna Islands
+                        </option>
+                        <option value="Western Sahara" data-country-code="+212">Western Sahara</option>
+                        <option value="Yemen" data-country-code="+967">Yemen</option>
+                        <option value="Yugoslavia" data-country-code="+38">Yugoslavia</option>
+                        <option value="Zambia" data-country-code="+260">Zambia</option>
+                        <option value="Zimbabwe" data-country-code="+263">Zimbabwe</option>
+                    </select>
+                </div>
+                <br>
+                <div class="flex">
+                    <label for="phone-number" style="margin-right: 30px;">Phone-Number*</label>
+                    <div id="mobileNumberContainer" style="display: flex; padding: 5; margin-bottom: 5px; height: 51px;"
+                        class="custom_input">
+                        <input id="countryCode" class="mx-3" type="text" placeholder="Code" value="+1" readonly
+                            style="max-width: 50px; margin-right: 20px; border-radius: 23%;  ">
+                        <input id="phoneNumber" class="py-2"
+                            style="border-radius: 10px;  background-color: rgb(203 213 225);" type="text"
+                            placeholder="Enter your mobile number" required>
+                    </div>
+                </div>
+
+                <!-- Experience Information -->
+                <hr>
+                <h2 class="text-2xl text-start py-3" style="color: rgb(7 77 141 );">Experience Information</h2>
+
+                <div>
+                    <label for="employmentStatus">Employment Status*</label>
+                    <select id="employmentStatus" class="border-solid border-2 border-gray-400 py-2 custom_input"
+                        required>
+                        <option value="" selected disabled>Select Employment Status</option>
+                        <option value="Full-time">Full-time</option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="Freelancer">Freelancer</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <br>
+                <div>
+                    <label for="totalWorkYears" style="margin-right: -20px">Total Work Experience*</label>
+                    <select id="totalWorkYears" class="border-solid border-2 border-gray-400 py-2 custom_input"
+                        required>
+                        <option value="" selected disabled>Select Total Work Years</option>
+                        <option value="Less than 1 year">Less than 1 year</option>
+                        <option value="1-3 years">1-3 years</option>
+                        <option value="4-6 years">4-6 years</option>
+                        <option value="7-10 years">7-10 years</option>
+                        <option value="More than 10 years">More than 10 years</option>
+                    </select>
+                </div>
+
+                <br>
+                <div>
+                    <label for="organizationName" style="margin-right: -5px;">Organization Name*</label>
+                    <input id="organizationName" class="border-solid border-2 border-gray-400 py-2 custom_input"
+                        type="text" placeholder="Enter your organization name" required>
+                </div>
+
+                <br>
+                <div>
+                    <label for="designation" style="margin-right: 50px;">Designation*</label>
+                    <input id="designation" class="border-solid border-2 border-gray-400 py-2 custom_input" type="text"
+                        placeholder="Enter your designation" required>
+                </div>
+
+                <br>
+                <div>
+                    <label for="linkedin" style="margin-right: 30px;">LinkedIn Profile</label>
+                    <input id="linkedin" class="border-solid border-2 border-gray-400 py-2 custom_input" type="text"
+                        placeholder="Enter your LinkedIn profile">
+                </div>
+
+                <br>
+
+                <div class="text-center">
+                    <button id="savebtn"
+                        class=" btn py-4 bg-blue-800 mx-3 text-white mt-5 w-[200px] text-lg font-bold mx-auto mb-5"
+                        style="margin-bottom: 40px; padding: 10px; margin-right: 10px;" type="submit">Review & Confirm
+                    </button>
+                </div>
+                <!-- </div> -->
+
+            </form>
+        </main>
+    </div>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+<script>
+
+    // // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAoebNDGNMijYHlUWslnsmjYOnGUasKm2U",
+        authDomain: "calai-5df45.firebaseapp.com",
+        databaseURL: "https://calai-5df45-default-rtdb.firebaseio.com",
+        projectId: "calai-5df45",
+        storageBucket: "calai-5df45.appspot.com",
+        messagingSenderId: "981887347929",
+        appId: "1:981887347929:web:7184650cfb1092c362e2c8",
+    };
+
+
+    firebase.initializeApp(firebaseConfig);
+    var StudentRegistrationDB = firebase.database().ref("StudentRegistration");
+
+    const form = document.querySelector('form');
+    var formData = {};
+    var registrationFee = 50;
+    var isEmailExistInDatabase = false;
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Check if gender is selected
+        if (!isGenderSelected()) {
+            // If gender is not selected, show an error message
+            alert("Please select a gender.");
+            return;
+        }
+        // Retrieve form data
+        formData = {
+            email: getElementVal("email"),
+            name: getElementVal("name"),
+            gender: getSelectedGender(),
+            phoneNumber: getElementVal("phoneNumber"),
+            course: getElementVal("course"),
+            country: getElementVal("country"),
+            countryCode: getElementVal("countryCode"),
+            coursePrice: getElementVal("coursePrice"),
+            employmentStatus: getElementVal("employmentStatus"),
+            totalWorkYears: getElementVal("totalWorkYears"),
+            organizationName: getElementVal("organizationName"),
+            designation: getElementVal("designation"),
+            linkedin: getElementVal("linkedin"),
+            isregistrationFeePaid: false,
+            registrationFee: registrationFee,
+            isTotalFeePaid: false,
+            totalFee: registrationFee + parseInt(getElementVal("coursePrice").slice(1)),
+            isCourseFeePaid: false,
+            Date_Time_of_Registration: new Date().toLocaleString(),
+            couponcode: null,
+            TotalPaidAmount: 0
+        };
+
+
+        if (checkPhoneNumber()) {
+
+            try {
+
+                if (isEmailExistInDatabase) {
+
+
+                    updateDataByEmail(formData.email, formData)
+
+                    function delayedAction() {
+                        // Your code here
+                        console.log("Waited for 1 second!");
+                        window.location.href = 'ChechkOut.html'
+                    }
+
+                    // Call setTimeout function with a delay of 1000 milliseconds (1 second)
+                    setTimeout(delayedAction, 1000);
+
+                }
+                else {
+                    // Store form data in local storage
+                    saveForm(formData);
+                    window.location.href = 'ChechkOut.html'
+                }
+                e.preventDefault();
+                localStorage.setItem('formData', formData);
+
+                e.preventDefault();
+                // Redirect to payment.html
+                // window.location.href = 'ChechkOut.html';
+            } catch (error) {
+                console.log(error);
+                alert(error);
+            }
+
+
+        }
+
+    })
+
+
+    function isGenderSelected() {
+        // Get all radio buttons with name "gender"
+        const genderRadios = document.getElementsByName("gender");
+
+        // Loop through each radio button to find if any is selected
+        for (let i = 0; i < genderRadios.length; i++) {
+            if (genderRadios[i].checked) {
+                // Return true if at least one radio button is selected
+                return true;
+            }
+        }
+
+        // If no radio button is selected, return false
+        return false;
+    }
+
+    function getSelectedGender() {
+        // Get the selected radio button for gender
+        const selectedGender = document.querySelector('input[name="gender"]:checked');
+
+        // Return the value of the selected radio button
+        return selectedGender ? selectedGender.value : null;
+    }
+
+    const saveForm = (formData) => {
+        var newregisterForm = StudentRegistrationDB.push();
+
+        newregisterForm.set(formData);
+    }
+
+
+    const getElementVal = (id) => {
+        return document.getElementById(id).value;
+    };
+
+    // phone number checker
+
+    function checkPhoneNumber() {
+        var phoneNumberInput = document.getElementById("phoneNumber");
+        var phoneNumber = phoneNumberInput.value;
+
+        if (phoneNumber.length !== 10) {
+            alert("Invalid phone number.");
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+    // Reference to the database
+    var StudentRegistrationDB3 = firebase.database().ref("StudentRegistration");
+
+    // Function to check if email exists in the database
+    function checkEmailExists(email) {
+        StudentRegistrationDB3.orderByChild("email").equalTo(email).once("value", function (snapshot) {
+            if (snapshot.exists()) {
+                // alert("Email already registered.");
+
+                // Log each data entry
+                snapshot.forEach(function (childSnapshot) {
+                    var data = childSnapshot.val();
+                    console.log("Data:", data);
+                    document.getElementById("email").value = data.email;
+                    document.getElementById("name").value = data.name;
+                    document.getElementById("course").value = data.course;
+                    document.getElementById("coursePrice").value = data.coursePrice;
+                    document.getElementById("country").value = data.country;
+                    document.getElementById("phoneNumber").value = data.phoneNumber;
+                    document.getElementById("employmentStatus").value = data.employmentStatus;
+                    document.getElementById("totalWorkYears").value = data.totalWorkYears;
+                    document.getElementById("organizationName").value = data.organizationName;
+                    document.getElementById("designation").value = data.designation;
+                    document.getElementById("linkedin").value = data.linkedin;
+                    document.getElementById("countryCode").value = data.countryCode;
+                    var genderRadios = document.getElementsByName('gender');
+
+                    // Loop through each radio button
+                    genderRadios.forEach(function (radio) {
+                        // Check if the radio button's value matches the desired value
+                        if (radio.value === data.gender) {
+                            // Set the checked attribute to true if it matches
+                            radio.checked = true;
+                        }
+                    });
+
+                    isEmailExistInDatabase = true;
+                });
+            }
+        });
+    }
+
+    // To checkEmailExists
+    checkEmailExists(localStorage.getItem("email"));
+
+
+
+    // Function to update the name field by email
+    function updateDataByEmail(email, data) {
+        StudentRegistrationDB3.orderByChild("email").equalTo(email).once("value", function (snapshot) {
+            if (snapshot.exists()) {
+                snapshot.forEach(function (childSnapshot) {
+                    var key = childSnapshot.key; // Get the key of the record
+                    StudentRegistrationDB3.child(key).update({ name: data.name }); // Update the name field
+                    StudentRegistrationDB3.child(key).update({ email: data.email });
+                    StudentRegistrationDB3.child(key).update({ gender: data.gender });
+                    StudentRegistrationDB3.child(key).update({ phoneNumber: data.phoneNumber }); // Update the name field
+                    StudentRegistrationDB3.child(key).update({ course: data.course });
+                    StudentRegistrationDB3.child(key).update({ country: data.country });
+                    StudentRegistrationDB3.child(key).update({ countryCode: data.countryCode });
+                    StudentRegistrationDB3.child(key).update({ phoneNumber: data.phoneNumber }); // Update the name field
+                    StudentRegistrationDB3.child(key).update({ coursePrice: data.coursePrice });
+                    StudentRegistrationDB3.child(key).update({ employmentStatus: data.employmentStatus });
+                    StudentRegistrationDB3.child(key).update({ totalWorkYears: data.totalWorkYears });
+                    StudentRegistrationDB3.child(key).update({ organizationName: data.organizationName }); // Update the name field
+                    StudentRegistrationDB3.child(key).update({ designation: data.designation });
+                    StudentRegistrationDB3.child(key).update({ linkedin: data.linkedin });
+                    return true;
+                });
+            }
+            return false;
+        });
+    }
+    // updateDataByEmail(localStorage.getItem, localStorage.getItem("formData"))
+
+</script>
+
+
+<script>
+
+    // Define a mapping of course IDs to their respective prices
+    const coursePrices = {
+        "CAID": 699,
+        "CAIM": 499,
+        "CAIL": 999
+    };
+
+    // Get the select element
+    var courseSelect = document.getElementById("course");
+
+    // Set the default value dynamically based on a condition
+    // Retrieve the courseName from localStorage
+    var defaultValue = localStorage.getItem('courseName'); // Change this to the desired default value
+
+    // Once you've retrieved the courseName, you can remove it from localStorage if needed
+    localStorage.removeItem('courseName');
+
+    // Loop through the options to find the option with the default value
+    for (var i = 0; i < courseSelect.options.length; i++) {
+        if (courseSelect.options[i].value === defaultValue) {
+            // Set the selected attribute for the default option
+            courseSelect.options[i].selected = true;
+            break;
+        }
+    }
+
+    // Function to update the course price based on the selected course
+    const updateCoursePrice = () => {
+        // Get the selected course ID
+        const selectedCourse = document.getElementById("course").value;
+
+        // Get the corresponding price from the coursePrices mapping
+        const coursePrice = coursePrices[selectedCourse];
+
+        // Update the course price input field
+        document.getElementById("coursePrice").value = `$${coursePrice}`;
+    };
+
+    // Add an event listener to the course select input
+    document.getElementById("course").addEventListener("change", updateCoursePrice);
+
+    // Initial call to updateCoursePrice to set the initial course price
+    updateCoursePrice();
+
+    // Function to change the country code based on the selected country
+    function changeCountryCode() {
+        var countrySelect = document.getElementById("country");
+        var countryCodeInput = document.getElementById("countryCode");
+
+        // Get the selected country code
+        var selectedCountry = countrySelect.options[countrySelect.selectedIndex].getAttribute("data-country-code");
+
+        // Update the country code input value
+        countryCodeInput.value = selectedCountry;
+    }
+    document.getElementById("country").addEventListener("change", changeCountryCode);
+
+    localStorage.removeItem('formData');
+</script>
+
+
+</html>
